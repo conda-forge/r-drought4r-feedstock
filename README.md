@@ -1,11 +1,11 @@
-About r-drought4r
-=================
+About r-drought4r-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-drought4r-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SantanderMetGroup/climate4R
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-drought4r-feedstock/blob/main/LICENSE.txt)
 
 Summary: Evapotranspiration routines and drought index calculation using the climate4R framework <https://github.com/SantanderMetGroup/climate4R>.
 
