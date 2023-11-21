@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = '0.3.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/drought4R/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: fa527ae4f67637f5ca2982fe5134d64d3b85965bb510c57ae51fa4541901d34e
+  sha256: dcbe1a60bee550423bb11f79f605e4eb9ff8156b0fea3ff79ac1525db9cc8a64
 
 build:
   merge_build_host: True  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
