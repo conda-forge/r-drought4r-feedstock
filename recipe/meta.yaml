@@ -29,12 +29,14 @@ requirements:
     - r-spei
     - r-abind
     - r-magrittr
+    - r-geosphere
     - r-transformer >=1.4.4
   run:
     - r-base
     - r-spei
     - r-abind
     - r-magrittr
+    - r-geosphere
     - r-transformer >=1.4.4
 
 test:
