@@ -26,14 +26,14 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-spei
+    - r-spei >=1.8.1
     - r-abind
     - r-magrittr
     - r-geosphere
     - r-transformer >=1.4.4
   run:
     - r-base
-    - r-spei
+    - r-spei >=1.8.1
     - r-abind
     - r-magrittr
     - r-geosphere
@@ -62,7 +62,7 @@ extra:
 
 # Package: drought4R
 # Depends: R(>= 3.5.0)
-# Imports: SPEI, transformeR(>= 1.4.4), utils, abind, magrittr
+# Imports: SPEI(>=1.8.1), transformeR(>= 1.4.4), utils, abind, magrittr
 # Suggests: loadeR, visualizeR, convertR
 # Type: Package
 # Title: A climate4R package for drought assessment <http://www.meteo.unican.es/climate4R>
