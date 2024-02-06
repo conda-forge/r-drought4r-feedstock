@@ -1,4 +1,4 @@
-{% set version = '0.3.1' %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/drought4R/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: dcbe1a60bee550423bb11f79f605e4eb9ff8156b0fea3ff79ac1525db9cc8a64
+  sha256: d0646ed8e6d8b983e6621fb27d6cfbe7accb1398bd5a8ef34eddd7415e05c82b
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -26,14 +26,14 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-spei
+    - r-spei >=1.8.1
     - r-abind
     - r-magrittr
     - r-geosphere
     - r-transformer >=1.4.4
   run:
     - r-base
-    - r-spei
+    - r-spei >=1.8.1
     - r-abind
     - r-magrittr
     - r-geosphere
@@ -46,8 +46,7 @@ test:
 
 about:
   home: https://github.com/SantanderMetGroup/climate4R
-  summary: Evapotranspiration routines and drought index calculation using the climate4R framework
-    <https://github.com/SantanderMetGroup/climate4R>.
+  summary: Evapotranspiration routines and drought index calculation using the climate4R framework <https://github.com/SantanderMetGroup/climate4R>.
   doc_url: https://github.com/SantanderMetGroup/drought4R
   dev_url: https://github.com/SantanderMetGroup/drought4R
   license: GPL-3.0-or-later
@@ -59,11 +58,11 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - cofinoa
-    
+
 
 # Package: drought4R
 # Depends: R(>= 3.5.0)
-# Imports: SPEI, transformeR(>= 1.4.4), utils, abind, magrittr
+# Imports: SPEI(>=1.8.1), transformeR(>= 1.4.4), utils, abind, magrittr
 # Suggests: loadeR, visualizeR, convertR
 # Type: Package
 # Title: A climate4R package for drought assessment <http://www.meteo.unican.es/climate4R>
